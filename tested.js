@@ -22,3 +22,8 @@ function sortByPrices(arr) {
     return arr.sort((a,b) => a.prices[0] - b.prices[0])
 }
 
+// filterByPrices(courses, requiredRange1);
+// filterByPrices(courses, requiredRange2);
+// filterByPrices(courses, requiredRange3);
+
+// sortByPrices(courses)
