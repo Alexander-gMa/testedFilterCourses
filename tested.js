@@ -14,8 +14,11 @@ let requiredRange1 = [null, 200];
 let requiredRange2 = [100, 350];
 let requiredRange3 = [200, null];
 
-function filter(arr, requiredRange) {
+function filterByPrices(arr, requiredRange) {
     return arr.filter(el => el.prices[0] >= requiredRange[0] && el.prices[1] <= requiredRange[1])
 }
 
-console.log(filter(courses,requiredRange1))
+function sortByPrices(arr) {
+    return arr.sort((a,b) => a.prices[0] - b.prices[0])
+}
+
